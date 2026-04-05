@@ -10,18 +10,18 @@
     "total_score": 830.0
   },
   "performance": {
-    "cpu_time_seconds": 10.51147679999849,
+    "cpu_time_seconds": 16.19497990000309,
     "iterations": 30,
     "iterations_to_convergence": 30,
     "last_improvement_iteration": 30,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
+    "restarts_performed": 3,
     "num_lp_solves": 30,
-    "num_labels_generated": 2069130,
-    "columns_generated": 4490,
-    "columns_in_pool": 1500,
-    "fractional_columns_at_root": 5
+    "num_labels_generated": 2483169,
+    "columns_generated": 4488,
+    "columns_in_pool": 1493,
+    "fractional_columns_at_root": 0
   },
   "routes": [
     {
@@ -49,41 +49,41 @@
       "route_index": 2,
       "nodes": [
         0,
-        28,
-        20,
-        12,
-        11,
-        3,
-        4,
-        5,
-        6,
-        14,
-        13,
+        29,
         21,
+        13,
+        14,
+        6,
+        5,
+        4,
+        3,
+        11,
+        12,
+        20,
+        28,
         65
       ],
-      "score": 275.0,
-      "length": 24.758088933390155
+      "score": 280.0,
+      "length": 24.92080962648189
     },
     {
       "route_index": 3,
       "nodes": [
         0,
-        29,
-        30,
-        31,
-        23,
-        24,
-        32,
-        40,
-        48,
-        47,
-        39,
-        38,
+        27,
+        26,
+        25,
+        33,
+        41,
+        49,
+        50,
+        42,
+        34,
+        35,
         65
       ],
-      "score": 275.0,
-      "length": 24.159415253899006
+      "score": 270.0,
+      "length": 24.08276253029822
     }
   ],
   "dataset": "chao",

@@ -7,48 +7,25 @@
     "end_depot": 65
   },
   "objective": {
-    "total_score": 1140.0
+    "total_score": 1145.0
   },
   "performance": {
-    "cpu_time_seconds": 10.028060799999366,
-    "iterations": 25,
-    "iterations_to_convergence": 25,
-    "last_improvement_iteration": 25,
+    "cpu_time_seconds": 17.164187300004414,
+    "iterations": 29,
+    "iterations_to_convergence": 29,
+    "last_improvement_iteration": 29,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
-    "num_lp_solves": 25,
-    "num_labels_generated": 2476950,
-    "columns_generated": 4964,
-    "columns_in_pool": 1649,
+    "restarts_performed": 3,
+    "num_lp_solves": 29,
+    "num_labels_generated": 3708807,
+    "columns_generated": 4982,
+    "columns_in_pool": 1653,
     "fractional_columns_at_root": 0
   },
   "routes": [
     {
       "route_index": 1,
-      "nodes": [
-        0,
-        20,
-        12,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        16,
-        15,
-        14,
-        13,
-        21,
-        29,
-        65
-      ],
-      "score": 380.0,
-      "length": 31.323785166045436
-    },
-    {
-      "route_index": 2,
       "nodes": [
         0,
         36,
@@ -71,27 +48,51 @@
       "length": 31.323785166045436
     },
     {
-      "route_index": 3,
+      "route_index": 2,
       "nodes": [
         0,
-        28,
-        27,
-        26,
+        21,
+        13,
+        5,
+        4,
+        3,
+        2,
+        1,
+        9,
         17,
-        25,
-        33,
-        41,
-        49,
-        57,
-        58,
-        50,
-        42,
-        34,
-        35,
+        18,
+        10,
+        11,
+        20,
+        28,
         65
       ],
       "score": 380.0,
-      "length": 30.987842378645194
+      "length": 31.323785166045436
+    },
+    {
+      "route_index": 3,
+      "nodes": [
+        0,
+        29,
+        30,
+        31,
+        23,
+        15,
+        6,
+        7,
+        8,
+        16,
+        24,
+        32,
+        40,
+        39,
+        38,
+        37,
+        65
+      ],
+      "score": 385.0,
+      "length": 31.06449510224598
     }
   ],
   "dataset": "chao",
