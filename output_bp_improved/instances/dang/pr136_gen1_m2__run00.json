@@ -1,0 +1,66 @@
+{
+  "instance": {
+    "num_nodes": 137,
+    "team_size": 2,
+    "max_route_distance": 24193.0,
+    "start_depot": 0,
+    "end_depot": 136
+  },
+  "objective": {
+    "total_score": 16.0
+  },
+  "performance": {
+    "cpu_time_seconds": 25.835143399996014,
+    "iterations": 30,
+    "iterations_to_convergence": 30,
+    "last_improvement_iteration": 30,
+    "stagnation_iterations": 0,
+    "accepted_worse_moves": 0,
+    "restarts_performed": 0,
+    "num_lp_solves": 30,
+    "num_labels_generated": 7112070,
+    "columns_generated": 5124,
+    "columns_in_pool": 1708,
+    "fractional_columns_at_root": 0
+  },
+  "routes": [
+    {
+      "route_index": 1,
+      "nodes": [
+        0,
+        25,
+        32,
+        136
+      ],
+      "score": 2.0,
+      "length": 14581.966718881462
+    },
+    {
+      "route_index": 2,
+      "nodes": [
+        0,
+        5,
+        4,
+        29,
+        28,
+        30,
+        27,
+        18,
+        16,
+        26,
+        31,
+        19,
+        15,
+        7,
+        6,
+        136
+      ],
+      "score": 14.0,
+      "length": 9947.74986975296
+    }
+  ],
+  "dataset": "dang",
+  "instance_name": "pr136_gen1_m2.txt",
+  "run_seed": 55007,
+  "run_index": 0
+}

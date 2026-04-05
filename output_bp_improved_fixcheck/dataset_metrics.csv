@@ -1,0 +1,4 @@
+dataset,num_instances,num_runs,mean_cpu_time_seconds,median_cpu_time_seconds,p90_cpu_time_seconds,mean_iterations_to_convergence,mean_gap_to_reference_best_percent,median_gap_to_reference_best_percent,p90_gap_to_reference_best_percent,success_rate_percent,score_mean,score_std,score_p10,score_p50,score_p90,mean_lp_solves,mean_labels_generated
+chao,1,1,0.47867869999754475,0.47867869999754475,0.47867869999754475,6.0,0.0,0.0,0.0,100.0,153.0,0.0,153.0,153.0,153.0,6.0,262416.0
+dang,1,1,21.262894299998152,21.262894299998152,21.262894299998152,27.0,0.0,0.0,0.0,100.0,36.0,0.0,36.0,36.0,36.0,27.0,11568150.0
+vansteenwegen,1,1,21.353608300003543,21.353608300003543,21.353608300003543,27.0,0.0,0.0,0.0,100.0,36.0,0.0,36.0,36.0,36.0,27.0,11568150.0

@@ -1,0 +1,66 @@
+{
+  "instance": {
+    "num_nodes": 137,
+    "team_size": 2,
+    "max_route_distance": 24193.0,
+    "start_depot": 0,
+    "end_depot": 136
+  },
+  "objective": {
+    "total_score": 16.0
+  },
+  "performance": {
+    "cpu_time_seconds": 6.159042999999656,
+    "iterations": 8,
+    "iterations_to_convergence": 8,
+    "last_improvement_iteration": 8,
+    "stagnation_iterations": 0,
+    "accepted_worse_moves": 0,
+    "restarts_performed": 0,
+    "num_lp_solves": 8,
+    "num_labels_generated": 1686160,
+    "columns_generated": 1705,
+    "columns_in_pool": 1705,
+    "fractional_columns_at_root": 0
+  },
+  "routes": [
+    {
+      "route_index": 1,
+      "nodes": [
+        0,
+        34,
+        33,
+        136
+      ],
+      "score": 2.0,
+      "length": 19839.430957819062
+    },
+    {
+      "route_index": 2,
+      "nodes": [
+        0,
+        5,
+        4,
+        29,
+        28,
+        30,
+        27,
+        26,
+        31,
+        19,
+        15,
+        7,
+        18,
+        16,
+        6,
+        136
+      ],
+      "score": 14.0,
+      "length": 9947.74986975296
+    }
+  ],
+  "dataset": "vansteenwegen",
+  "instance_name": "pr136_gen1_m2.txt",
+  "run_seed": 49007,
+  "run_index": 0
+}

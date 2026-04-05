@@ -1,0 +1,1 @@
+dataset,instance,num_nodes,team_size,runs,reference_best_score,best_score,mean_score,std_score,mean_cpu_time_seconds,median_cpu_time_seconds,mean_lp_solves,mean_labels_generated,success_rate_percent,mean_gap_to_reference_best_percent,max_gap_to_reference_best_percent

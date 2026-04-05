@@ -1,0 +1,100 @@
+{
+  "instance": {
+    "num_nodes": 152,
+    "team_size": 4,
+    "max_route_distance": 131.25,
+    "start_depot": 0,
+    "end_depot": 151
+  },
+  "objective": {
+    "total_score": 644.0
+  },
+  "performance": {
+    "cpu_time_seconds": 26.63413270000092,
+    "iterations": 30,
+    "iterations_to_convergence": 30,
+    "last_improvement_iteration": 30,
+    "stagnation_iterations": 0,
+    "accepted_worse_moves": 0,
+    "restarts_performed": 0,
+    "num_lp_solves": 30,
+    "num_labels_generated": 7905870,
+    "columns_generated": 4974,
+    "columns_in_pool": 1658,
+    "fractional_columns_at_root": 0
+  },
+  "routes": [
+    {
+      "route_index": 1,
+      "nodes": [
+        0,
+        31,
+        13,
+        151
+      ],
+      "score": 50.0,
+      "length": 55.66310125628452
+    },
+    {
+      "route_index": 2,
+      "nodes": [
+        0,
+        39,
+        23,
+        151
+      ],
+      "score": 60.0,
+      "length": 78.62841352460858
+    },
+    {
+      "route_index": 3,
+      "nodes": [
+        0,
+        147,
+        118,
+        5,
+        96,
+        99,
+        104,
+        85,
+        100,
+        37,
+        98,
+        59,
+        95,
+        94,
+        112,
+        151
+      ],
+      "score": 301.0,
+      "length": 69.17048425514588
+    },
+    {
+      "route_index": 4,
+      "nodes": [
+        0,
+        53,
+        105,
+        26,
+        149,
+        109,
+        80,
+        150,
+        68,
+        116,
+        12,
+        138,
+        28,
+        111,
+        27,
+        151
+      ],
+      "score": 233.0,
+      "length": 66.76294404537623
+    }
+  ],
+  "dataset": "dang",
+  "instance_name": "cmt151c_m4.txt",
+  "run_seed": 12007,
+  "run_index": 0
+}

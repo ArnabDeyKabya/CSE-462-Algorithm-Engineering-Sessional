@@ -1,0 +1,66 @@
+{
+  "instance": {
+    "num_nodes": 201,
+    "team_size": 2,
+    "max_route_distance": 286.5,
+    "start_depot": 0,
+    "end_depot": 200
+  },
+  "objective": {
+    "total_score": 375.0
+  },
+  "performance": {
+    "cpu_time_seconds": 9.63705789999949,
+    "iterations": 6,
+    "iterations_to_convergence": 6,
+    "last_improvement_iteration": 6,
+    "stagnation_iterations": 0,
+    "accepted_worse_moves": 0,
+    "restarts_performed": 0,
+    "num_lp_solves": 6,
+    "num_labels_generated": 2158380,
+    "columns_generated": 5283,
+    "columns_in_pool": 1761,
+    "fractional_columns_at_root": 0
+  },
+  "routes": [
+    {
+      "route_index": 1,
+      "nodes": [
+        0,
+        39,
+        23,
+        200
+      ],
+      "score": 60.0,
+      "length": 78.62841352460858
+    },
+    {
+      "route_index": 2,
+      "nodes": [
+        0,
+        112,
+        13,
+        95,
+        151,
+        98,
+        85,
+        93,
+        59,
+        96,
+        94,
+        183,
+        147,
+        89,
+        156,
+        200
+      ],
+      "score": 315.0,
+      "length": 57.7225898158756
+    }
+  ],
+  "dataset": "dang",
+  "instance_name": "cmt200c_m2.txt",
+  "run_seed": 16007,
+  "run_index": 0
+}

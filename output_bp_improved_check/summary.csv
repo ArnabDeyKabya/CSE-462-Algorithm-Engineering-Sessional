@@ -1,0 +1,4 @@
+dataset,instance,run_index,run_seed,num_nodes,team_size,max_route_distance,total_score,reference_best_score,gap_to_reference_best_percent,success_reference_hit,cpu_time_seconds,iterations,iterations_to_convergence,last_improvement_iteration,stagnation_iterations,accepted_worse_moves,restarts_performed,num_lp_solves,num_labels_generated,status
+chao,p4.2.a.txt,0,7,100,2,25.0,153.0,153.0,0.0,1,0.4829686999983096,6,6,6,0,0,0,6,262416,ok
+dang,bier127_gen1_m2.txt,0,7,128,2,29570.5,36.0,36.0,0.0,1,20.21874299999763,27,27,27,0,0,0,27,11568150,ok
+vansteenwegen,bier127_gen1_m2.txt,0,7,128,2,29570.5,36.0,36.0,0.0,1,20.387793399997463,27,27,27,0,0,0,27,11568150,ok

@@ -1,0 +1,4 @@
+dataset,instance,run_index,run_seed,num_nodes,team_size,max_route_distance,total_score,reference_best_score,gap_to_reference_best_percent,success_reference_hit,cpu_time_seconds,iterations,iterations_to_convergence,last_improvement_iteration,stagnation_iterations,accepted_worse_moves,restarts_performed,num_lp_solves,num_labels_generated,status
+chao,p4.2.a.txt,0,,,,,,,,,,,,,,,,,,error: maximum recursion depth exceeded
+dang,bier127_gen1_m2.txt,0,,,,,,,,,,,,,,,,,,error: maximum recursion depth exceeded
+vansteenwegen,bier127_gen1_m2.txt,0,,,,,,,,,,,,,,,,,,error: maximum recursion depth exceeded

@@ -1,0 +1,88 @@
+{
+  "instance": {
+    "num_nodes": 251,
+    "team_size": 4,
+    "max_route_distance": 446.0,
+    "start_depot": 0,
+    "end_depot": 250
+  },
+  "objective": {
+    "total_score": 1408.0
+  },
+  "performance": {
+    "cpu_time_seconds": 12.110375200001727,
+    "iterations": 6,
+    "iterations_to_convergence": 6,
+    "last_improvement_iteration": 6,
+    "stagnation_iterations": 0,
+    "accepted_worse_moves": 0,
+    "restarts_performed": 0,
+    "num_lp_solves": 6,
+    "num_labels_generated": 2725380,
+    "columns_generated": 5391,
+    "columns_in_pool": 1797,
+    "fractional_columns_at_root": 0
+  },
+  "routes": [
+    {
+      "route_index": 1,
+      "nodes": [
+        0,
+        3,
+        25,
+        250
+      ],
+      "score": 186.0,
+      "length": 157.19971917799143
+    },
+    {
+      "route_index": 2,
+      "nodes": [
+        0,
+        19,
+        38,
+        250
+      ],
+      "score": 184.0,
+      "length": 209.04824575293142
+    },
+    {
+      "route_index": 3,
+      "nodes": [
+        0,
+        37,
+        40,
+        250
+      ],
+      "score": 163.0,
+      "length": 283.8034979914679
+    },
+    {
+      "route_index": 4,
+      "nodes": [
+        0,
+        125,
+        64,
+        224,
+        82,
+        225,
+        223,
+        43,
+        157,
+        249,
+        62,
+        237,
+        177,
+        69,
+        163,
+        250
+      ],
+      "score": 875.0,
+      "length": 117.37815699345295
+    }
+  ],
+  "dataset": "dang",
+  "instance_name": "gil262c_m4.txt",
+  "run_seed": 35007,
+  "run_index": 0
+}

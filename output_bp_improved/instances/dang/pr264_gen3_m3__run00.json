@@ -1,0 +1,77 @@
+{
+  "instance": {
+    "num_nodes": 265,
+    "team_size": 3,
+    "max_route_distance": 8189.33,
+    "start_depot": 0,
+    "end_depot": 264
+  },
+  "objective": {
+    "total_score": 396.0
+  },
+  "performance": {
+    "cpu_time_seconds": 11.915101899998263,
+    "iterations": 6,
+    "iterations_to_convergence": 6,
+    "last_improvement_iteration": 6,
+    "stagnation_iterations": 0,
+    "accepted_worse_moves": 0,
+    "restarts_performed": 0,
+    "num_lp_solves": 6,
+    "num_labels_generated": 2884140,
+    "columns_generated": 5079,
+    "columns_in_pool": 1693,
+    "fractional_columns_at_root": 0
+  },
+  "routes": [
+    {
+      "route_index": 1,
+      "nodes": [
+        0,
+        1,
+        4,
+        264
+      ],
+      "score": 78.0,
+      "length": 6512.5929444348
+    },
+    {
+      "route_index": 2,
+      "nodes": [
+        0,
+        2,
+        3,
+        264
+      ],
+      "score": 78.0,
+      "length": 6503.150581431986
+    },
+    {
+      "route_index": 3,
+      "nodes": [
+        0,
+        40,
+        58,
+        122,
+        121,
+        57,
+        56,
+        48,
+        47,
+        45,
+        44,
+        43,
+        42,
+        41,
+        39,
+        264
+      ],
+      "score": 240.0,
+      "length": 4453.236221925903
+    }
+  ],
+  "dataset": "dang",
+  "instance_name": "pr264_gen3_m3.txt",
+  "run_seed": 61007,
+  "run_index": 0
+}

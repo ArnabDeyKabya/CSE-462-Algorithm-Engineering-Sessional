@@ -1,0 +1,77 @@
+{
+  "instance": {
+    "num_nodes": 201,
+    "team_size": 3,
+    "max_route_distance": 127.33,
+    "start_depot": 0,
+    "end_depot": 200
+  },
+  "objective": {
+    "total_score": 428.0
+  },
+  "performance": {
+    "cpu_time_seconds": 2.8723605000013777,
+    "iterations": 2,
+    "iterations_to_convergence": 2,
+    "last_improvement_iteration": 2,
+    "stagnation_iterations": 0,
+    "accepted_worse_moves": 0,
+    "restarts_performed": 0,
+    "num_lp_solves": 2,
+    "num_labels_generated": 639520,
+    "columns_generated": 1663,
+    "columns_in_pool": 1663,
+    "fractional_columns_at_root": 0
+  },
+  "routes": [
+    {
+      "route_index": 1,
+      "nodes": [
+        0,
+        31,
+        5,
+        200
+      ],
+      "score": 53.0,
+      "length": 65.28271834213217
+    },
+    {
+      "route_index": 2,
+      "nodes": [
+        0,
+        23,
+        39,
+        200
+      ],
+      "score": 60.0,
+      "length": 78.62841352460858
+    },
+    {
+      "route_index": 3,
+      "nodes": [
+        0,
+        112,
+        13,
+        95,
+        151,
+        98,
+        85,
+        93,
+        59,
+        96,
+        94,
+        183,
+        147,
+        89,
+        156,
+        200
+      ],
+      "score": 315.0,
+      "length": 57.7225898158756
+    }
+  ],
+  "dataset": "vansteenwegen",
+  "instance_name": "cmt200b_m3.txt",
+  "run_seed": 14007,
+  "run_index": 0
+}
