@@ -191,17 +191,6 @@ python .\compare_bp_results.py
 
 ---
 
-## Optional helpers
-
-- **`run_ils.ps1`** / **`run_ils.sh`**: pass-through wrappers so you can run `top_ils.py` with arbitrary arguments without typing the Python path each time. Not required for the project to work.
-
----
-
-## Documentation PDFs and notes
-
-- **`ils.md`** — Detailed walkthrough of the baseline ILS implementation.
-- **`doc/*.md`** — Experiment reports, comparative analyses, and B&P planning notes.
-- **`Team Orienteering Problem.pdf`** — Problem background reference.
 
 ---
 
