@@ -19,9 +19,9 @@ def ensure_dir(path: Path) -> None:
 
 def main() -> None:
     root = Path(__file__).resolve().parent
-    out_base = root / "output"
-    out_improved = root / "output_improved"
-    out_cmp = root / "output_comparison"
+    out_base = root / "output_ils"
+    out_improved = root / "output_ils_improved"
+    out_cmp = root / "output_ils_comparison"
     fig_dir = out_cmp / "figures"
     ensure_dir(fig_dir)
 

@@ -32,4 +32,4 @@ if ($null -eq $pythonCmd) {
     Write-Error 'Python not found. Activate/install Python first.'
 }
 
-& $pythonCmd 'top_ils.py' --experiment --datasets-root 'datasets' --output-root 'output' --iterations 20 --seed 7 --alpha 0.25 --remove-fraction 0.30 --restart-interval 20 --runs-per-instance 2
+& $pythonCmd 'top_ils.py' --experiment --datasets-root 'datasets' --output-root 'output_ils' --iterations 20 --seed 7 --alpha 0.25 --remove-fraction 0.30 --restart-interval 20 --runs-per-instance 2

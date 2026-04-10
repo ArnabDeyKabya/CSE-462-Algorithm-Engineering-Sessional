@@ -10,18 +10,18 @@
     "total_score": 340.0
   },
   "performance": {
-    "cpu_time_seconds": 0.6635524000012083,
-    "iterations": 8,
-    "iterations_to_convergence": 8,
-    "last_improvement_iteration": 8,
+    "cpu_time_seconds": 2.030070299981162,
+    "iterations": 12,
+    "iterations_to_convergence": 12,
+    "last_improvement_iteration": 12,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
-    "num_lp_solves": 8,
-    "num_labels_generated": 438864,
-    "columns_generated": 133,
-    "columns_in_pool": 133,
-    "fractional_columns_at_root": 8
+    "num_lp_solves": 12,
+    "num_labels_generated": 871750,
+    "columns_generated": 137,
+    "columns_in_pool": 137,
+    "fractional_columns_at_root": 10
   },
   "routes": [
     {

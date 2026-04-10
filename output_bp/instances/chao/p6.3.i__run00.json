@@ -7,52 +7,52 @@
     "end_depot": 63
   },
   "objective": {
-    "total_score": 438.0
+    "total_score": 426.0
   },
   "performance": {
-    "cpu_time_seconds": 1.3027468000000226,
-    "iterations": 8,
-    "iterations_to_convergence": 8,
-    "last_improvement_iteration": 8,
+    "cpu_time_seconds": 2.6195267000002787,
+    "iterations": 12,
+    "iterations_to_convergence": 12,
+    "last_improvement_iteration": 12,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
-    "num_lp_solves": 8,
-    "num_labels_generated": 416602,
-    "columns_generated": 606,
-    "columns_in_pool": 606,
-    "fractional_columns_at_root": 8
+    "num_lp_solves": 12,
+    "num_labels_generated": 842474,
+    "columns_generated": 628,
+    "columns_in_pool": 628,
+    "fractional_columns_at_root": 14
   },
   "routes": [
     {
       "route_index": 1,
       "nodes": [
         0,
-        33,
+        26,
         34,
         63
       ],
       "score": 66.0,
-      "length": 18.218098372906535
+      "length": 17.2276413803437
     },
     {
       "route_index": 2,
       "nodes": [
         0,
         1,
-        7,
+        3,
         11,
-        16,
+        17,
         23,
         31,
         38,
         45,
         50,
         55,
-        61,
+        59,
         63
       ],
-      "score": 186.0,
+      "score": 180.0,
       "length": 18.14213562373095
     },
     {
@@ -66,13 +66,13 @@
         25,
         32,
         40,
-        47,
+        46,
         52,
-        60,
+        56,
         62,
         63
       ],
-      "score": 186.0,
+      "score": 180.0,
       "length": 18.14213562373095
     }
   ],

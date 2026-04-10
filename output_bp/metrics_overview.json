@@ -6,11 +6,11 @@
   },
   "config": {
     "seed": 7,
-    "max_cg_iterations": 8,
-    "pricing_trials": 16,
-    "max_insertions": 14,
+    "max_cg_iterations": 12,
+    "pricing_trials": 22,
+    "max_insertions": 18,
     "runs_per_instance": 1,
-    "skip_existing": true
+    "skip_existing": false
   },
   "files": {
     "summary_csv": "output_bp\\summary.csv",

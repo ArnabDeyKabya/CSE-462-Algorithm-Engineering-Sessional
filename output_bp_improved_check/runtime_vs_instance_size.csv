@@ -1,4 +1,0 @@
-dataset,instance,num_nodes,mean_cpu_time_seconds
-chao,p4.2.a.txt,100,0.4829686999983096
-dang,bier127_gen1_m2.txt,128,20.21874299999763
-vansteenwegen,bier127_gen1_m2.txt,128,20.387793399997463

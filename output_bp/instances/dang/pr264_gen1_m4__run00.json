@@ -7,10 +7,10 @@
     "end_depot": 264
   },
   "objective": {
-    "total_score": 20.0
+    "total_score": 24.0
   },
   "performance": {
-    "cpu_time_seconds": 3.020712099998491,
+    "cpu_time_seconds": 4.122645900002681,
     "iterations": 2,
     "iterations_to_convergence": 2,
     "last_improvement_iteration": 2,
@@ -18,7 +18,7 @@
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
     "num_lp_solves": 2,
-    "num_labels_generated": 854560,
+    "num_labels_generated": 1893540,
     "columns_generated": 1310,
     "columns_in_pool": 1310,
     "fractional_columns_at_root": 0
@@ -28,12 +28,12 @@
       "route_index": 1,
       "nodes": [
         0,
-        13,
-        35,
+        9,
+        8,
         264
       ],
       "score": 2.0,
-      "length": 4682.438305965616
+      "length": 5603.707511475917
     },
     {
       "route_index": 2,
@@ -51,11 +51,11 @@
       "nodes": [
         0,
         20,
-        30,
+        29,
         264
       ],
       "score": 2.0,
-      "length": 3676.9799149823048
+      "length": 3670.9620517591848
     },
     {
       "route_index": 4,
@@ -63,10 +63,14 @@
         0,
         40,
         39,
+        33,
+        34,
+        35,
         61,
         62,
         115,
         116,
+        117,
         118,
         119,
         120,
@@ -77,8 +81,8 @@
         38,
         264
       ],
-      "score": 14.0,
-      "length": 2726.882723033592
+      "score": 18.0,
+      "length": 3039.834563766817
     }
   ],
   "dataset": "dang",

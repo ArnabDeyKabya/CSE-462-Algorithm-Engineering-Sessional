@@ -7,20 +7,20 @@
     "end_depot": 136
   },
   "objective": {
-    "total_score": 16.0
+    "total_score": 20.0
   },
   "performance": {
-    "cpu_time_seconds": 6.159042999999656,
-    "iterations": 8,
-    "iterations_to_convergence": 8,
-    "last_improvement_iteration": 8,
+    "cpu_time_seconds": 12.468779299990274,
+    "iterations": 12,
+    "iterations_to_convergence": 12,
+    "last_improvement_iteration": 12,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
-    "num_lp_solves": 8,
-    "num_labels_generated": 1686160,
-    "columns_generated": 1705,
-    "columns_in_pool": 1705,
+    "num_lp_solves": 12,
+    "num_labels_generated": 5541426,
+    "columns_generated": 1711,
+    "columns_in_pool": 1711,
     "fractional_columns_at_root": 0
   },
   "routes": [
@@ -28,12 +28,12 @@
       "route_index": 1,
       "nodes": [
         0,
-        34,
-        33,
+        32,
+        20,
         136
       ],
       "score": 2.0,
-      "length": 19839.430957819062
+      "length": 15108.705125661398
     },
     {
       "route_index": 2,
@@ -41,22 +41,26 @@
         0,
         5,
         4,
+        17,
         29,
         28,
         30,
         27,
+        18,
+        16,
         26,
+        41,
+        36,
         31,
         19,
         15,
+        1,
         7,
-        18,
-        16,
         6,
         136
       ],
-      "score": 14.0,
-      "length": 9947.74986975296
+      "score": 18.0,
+      "length": 14838.279407684577
     }
   ],
   "dataset": "vansteenwegen",

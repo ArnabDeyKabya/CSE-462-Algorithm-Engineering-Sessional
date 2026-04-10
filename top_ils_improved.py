@@ -478,6 +478,7 @@ def _solve_top_ils_internal(
     temperature = max(1.0, current.total_score * 0.02)
     cooling_rate = 0.997
 
+    progress_step = max(1, iterations // 10)
     for it in range(1, iterations + 1):
         candidate = _perturb(current, instance, dist, rng, adaptive_remove_fraction)
         candidate = _local_search(candidate, instance, dist)
@@ -535,6 +536,14 @@ def _solve_top_ils_internal(
             adaptive_remove_fraction = remove_fraction
             temperature = max(1.0, current.total_score * 0.02)
             stagnation = 0
+
+        if it == 1 or it == iterations or it % progress_step == 0:
+            print(
+                f"[ils-improved] iter {it}/{iterations} "
+                f"best={best.total_score:.2f} current={current.total_score:.2f} "
+                f"stagnation={stagnation} restarts={restarts} "
+                f"remove_frac={adaptive_remove_fraction:.3f} temp={temperature:.3f}"
+            )
 
     cpu_t = time.perf_counter() - start_t
     stats = ILSStats(
@@ -779,6 +788,7 @@ def run_dataset_experiments(
                 try:
                     json_path = ds_output / f"{file_path.stem}__run{run_idx:02d}.json"
                     if skip_existing and json_path.exists():
+                        print(f"[skip] {dataset}/{file_path.name} run={run_idx} exists")
                         continue
 
                     instance = _parse_top_instance_file(file_path)
@@ -803,7 +813,13 @@ def run_dataset_experiments(
                     out_data["run_index"] = run_idx
 
                     json_path.write_text(json.dumps(out_data, indent=2), encoding="utf-8")
+                    print(
+                        f"[done] {dataset}/{file_path.name} run={run_idx} "
+                        f"score={solution.total_score:.2f} cpu={stats.cpu_time_seconds:.3f}s "
+                        f"iters_to_conv={stats.iterations_to_convergence}"
+                    )
                 except Exception as ex:
+                    print(f"[error] {dataset}/{file_path.name} run={run_idx}: {ex}")
                     error_rows.append(
                         {
                             "dataset": dataset,
@@ -1182,7 +1198,7 @@ def main() -> None:
     parser.add_argument("--instance", type=str, default="", help="Path to one TOP instance file")
     parser.add_argument("--experiment", action="store_true", help="Run batch experiments from datasets folder")
     parser.add_argument("--datasets-root", type=str, default="datasets", help="Datasets root path")
-    parser.add_argument("--output-root", type=str, default="output", help="Output root path")
+    parser.add_argument("--output-root", type=str, default="output_ils_improved", help="Output root path")
     parser.add_argument("--iterations", type=int, default=300, help="ILS iterations")
     parser.add_argument("--seed", type=int, default=7, help="Random seed")
     parser.add_argument("--alpha", type=float, default=0.25, help="RCL ratio in construction")

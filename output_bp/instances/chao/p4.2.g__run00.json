@@ -7,10 +7,10 @@
     "end_depot": 99
   },
   "objective": {
-    "total_score": 350.0
+    "total_score": 398.0
   },
   "performance": {
-    "cpu_time_seconds": 1.216841800000111,
+    "cpu_time_seconds": 1.6013526000315323,
     "iterations": 2,
     "iterations_to_convergence": 2,
     "last_improvement_iteration": 2,
@@ -18,7 +18,7 @@
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
     "num_lp_solves": 2,
-    "num_labels_generated": 300160,
+    "num_labels_generated": 652080,
     "columns_generated": 1344,
     "columns_in_pool": 1344,
     "fractional_columns_at_root": 0
@@ -41,6 +41,7 @@
         0,
         96,
         41,
+        86,
         50,
         3,
         23,
@@ -48,15 +49,18 @@
         14,
         34,
         87,
+        94,
         18,
+        63,
         84,
+        98,
         76,
         24,
         78,
         99
       ],
-      "score": 296.0,
-      "length": 47.87905843829619
+      "score": 344.0,
+      "length": 54.006041114640844
     }
   ],
   "dataset": "chao",

@@ -7,20 +7,20 @@
     "end_depot": 63
   },
   "objective": {
-    "total_score": 348.0
+    "total_score": 396.0
   },
   "performance": {
-    "cpu_time_seconds": 0.9842265999977826,
-    "iterations": 8,
-    "iterations_to_convergence": 8,
-    "last_improvement_iteration": 8,
+    "cpu_time_seconds": 1.809193400084041,
+    "iterations": 12,
+    "iterations_to_convergence": 12,
+    "last_improvement_iteration": 12,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
-    "num_lp_solves": 8,
-    "num_labels_generated": 327626,
-    "columns_generated": 404,
-    "columns_in_pool": 404,
+    "num_lp_solves": 12,
+    "num_labels_generated": 740426,
+    "columns_generated": 434,
+    "columns_in_pool": 434,
     "fractional_columns_at_root": 8
   },
   "routes": [
@@ -28,44 +28,48 @@
       "route_index": 1,
       "nodes": [
         0,
-        30,
-        37,
+        11,
+        16,
+        23,
+        31,
+        38,
+        45,
         63
       ],
-      "score": 60.0,
-      "length": 16.241089219164984
+      "score": 132.0,
+      "length": 16.64222328045784
     },
     {
       "route_index": 2,
       "nodes": [
         0,
         4,
-        8,
-        18,
-        25,
-        32,
-        40,
+        12,
+        17,
+        24,
+        39,
         46,
-        56,
-        59,
+        51,
+        55,
+        61,
         63
       ],
-      "score": 144.0,
+      "score": 120.0,
       "length": 16.48528137423857
     },
     {
       "route_index": 3,
       "nodes": [
         0,
-        1,
-        7,
-        17,
-        23,
-        31,
-        38,
-        45,
-        55,
-        61,
+        2,
+        8,
+        18,
+        32,
+        40,
+        47,
+        52,
+        60,
+        62,
         63
       ],
       "score": 144.0,

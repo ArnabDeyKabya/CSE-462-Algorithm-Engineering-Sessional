@@ -5,13 +5,48 @@ import csv
 from dataclasses import dataclass
 import json
 import math
+import os
 import random
 import statistics
 import time
 from pathlib import Path
-from typing import Callable, Dict, List, Sequence, Tuple
+from typing import Callable, Dict, IO, List, Sequence, Tuple
 
 import pulp
+
+
+def _atomic_write_csv(path: Path, write_fn: Callable[[IO[str]], None]) -> None:
+    """Write CSV via temp+replace; if locked, write a timestamped fallback file."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(path.name + ".tmp")
+    try:
+        with tmp.open("w", newline="", encoding="utf-8") as f:
+            write_fn(f)
+        os.replace(tmp, path)
+    except PermissionError as e:
+        # Windows often locks CSV files if opened in Excel/preview/editor.
+        # Keep the run alive by writing to a fallback file instead of crashing.
+        ts = int(time.time())
+        fallback = path.with_name(f"{path.stem}__locked_write_{ts}{path.suffix}")
+        try:
+            with fallback.open("w", newline="", encoding="utf-8") as f:
+                write_fn(f)
+            print(
+                f"[warn] could not overwrite locked file: {path.resolve()} "
+                f"-> wrote fallback: {fallback.resolve()} ({e})"
+            )
+        finally:
+            if tmp.exists():
+                try:
+                    tmp.unlink()
+                except OSError:
+                    pass
+    except OSError:
+        if tmp.exists():
+            try:
+                tmp.unlink()
+            except OSError:
+                pass
 
 
 @dataclass
@@ -345,9 +380,9 @@ def _pricing_heuristic(
 def solve_top_branch_and_price(
     instance: TOPInstance,
     seed: int | None = None,
-    max_cg_iterations: int = 8,
-    pricing_trials: int = 16,
-    max_insertions: int = 14,
+    max_cg_iterations: int = 12,
+    pricing_trials: int = 22,
+    max_insertions: int = 18,
 ) -> Tuple[BPSolution, BPStats]:
     if max_cg_iterations <= 0:
         raise ValueError("max_cg_iterations must be positive")
@@ -513,11 +548,14 @@ def run_dataset_experiments(
 
         ds_output = per_instance_root / dataset
         print(f"[dataset] {dataset}: {len(files)} instances")
+        skipped_existing = 0
+        solved_runs = 0
 
         for idx, file_path in enumerate(files):
             for run_idx in range(runs_per_instance):
                 json_path = ds_output / f"{file_path.stem}__run{run_idx:02d}.json"
                 if skip_existing and json_path.exists():
+                    skipped_existing += 1
                     continue
 
                 try:
@@ -540,6 +578,7 @@ def run_dataset_experiments(
                     out_data["run_seed"] = run_seed
                     out_data["run_index"] = run_idx
                     json_path.write_text(json.dumps(out_data, indent=2), encoding="utf-8")
+                    solved_runs += 1
                 except Exception as ex:
                     error_rows.append(
                         {
@@ -563,6 +602,11 @@ def run_dataset_experiments(
                             "status": f"error: {ex}",
                         }
                     )
+        if skip_existing:
+            print(
+                f"[dataset-summary] {dataset}: solved_runs={solved_runs}, "
+                f"skipped_existing={skipped_existing}"
+            )
 
     # Rebuild summary from output JSONs for resume-idempotence.
     for dataset in dataset_names:
@@ -665,10 +709,12 @@ def run_dataset_experiments(
         "num_labels_generated",
         "status",
     ]
-    with summary_path.open("w", newline="", encoding="utf-8") as f:
+    def _write_summary(f: IO[str]) -> None:
         w = csv.DictWriter(f, fieldnames=summary_fields)
         w.writeheader()
         w.writerows(summary_rows)
+
+    _atomic_write_csv(summary_path, _write_summary)
 
     # Aggregate by instance.
     instance_rows: List[dict] = []
@@ -723,7 +769,7 @@ def run_dataset_experiments(
                 }
             )
 
-    with (output_root / "instance_metrics.csv").open("w", newline="", encoding="utf-8") as f:
+    def _write_instance_metrics(f: IO[str]) -> None:
         fields = [
             "dataset",
             "instance",
@@ -745,6 +791,8 @@ def run_dataset_experiments(
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         w.writerows(instance_rows)
+
+    _atomic_write_csv(output_root / "instance_metrics.csv", _write_instance_metrics)
 
     dataset_rows: List[dict] = []
     for dataset in dataset_names:
@@ -775,7 +823,7 @@ def run_dataset_experiments(
             }
         )
 
-    with (output_root / "dataset_metrics.csv").open("w", newline="", encoding="utf-8") as f:
+    def _write_dataset_metrics(f: IO[str]) -> None:
         fields = [
             "dataset",
             "num_instances",
@@ -800,15 +848,21 @@ def run_dataset_experiments(
         w.writeheader()
         w.writerows(dataset_rows)
 
-    with (output_root / "quality_distribution.csv").open("w", newline="", encoding="utf-8") as f:
+    _atomic_write_csv(output_root / "dataset_metrics.csv", _write_dataset_metrics)
+
+    def _write_quality_distribution(f: IO[str]) -> None:
         w = csv.DictWriter(f, fieldnames=["dataset", "instance", "score", "gap_to_reference_best_percent"])
         w.writeheader()
         w.writerows(quality_rows)
 
-    with (output_root / "runtime_vs_instance_size.csv").open("w", newline="", encoding="utf-8") as f:
+    _atomic_write_csv(output_root / "quality_distribution.csv", _write_quality_distribution)
+
+    def _write_runtime_vs_size(f: IO[str]) -> None:
         w = csv.DictWriter(f, fieldnames=["dataset", "instance", "num_nodes", "mean_cpu_time_seconds"])
         w.writeheader()
         w.writerows(runtime_rows)
+
+    _atomic_write_csv(output_root / "runtime_vs_instance_size.csv", _write_runtime_vs_size)
 
     try:
         import matplotlib.pyplot as plt  # type: ignore
@@ -910,9 +964,9 @@ def main() -> None:
     parser.add_argument("--datasets-root", type=str, default="datasets", help="Datasets root path")
     parser.add_argument("--output-root", type=str, default="output_bp", help="Output root path")
     parser.add_argument("--seed", type=int, default=7, help="Random seed")
-    parser.add_argument("--max-cg-iterations", type=int, default=8, help="Max column generation iterations")
-    parser.add_argument("--pricing-trials", type=int, default=16, help="Pricing heuristic trials per CG iteration")
-    parser.add_argument("--max-insertions", type=int, default=14, help="Max insertions in one pricing construction")
+    parser.add_argument("--max-cg-iterations", type=int, default=12, help="Max column generation iterations")
+    parser.add_argument("--pricing-trials", type=int, default=22, help="Pricing heuristic trials per CG iteration")
+    parser.add_argument("--max-insertions", type=int, default=18, help="Max insertions in one pricing construction")
     parser.add_argument("--runs-per-instance", type=int, default=1, help="Independent runs per instance")
     parser.add_argument("--skip-existing", action="store_true", help="Skip already generated run JSON")
     parser.add_argument("--max-instances-per-dataset", type=int, default=None, help="Optional cap for quick tests")

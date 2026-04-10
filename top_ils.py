@@ -348,6 +348,7 @@ def _solve_top_ils_internal(
     accepted_worse = 0
     restarts = 0
 
+    progress_step = max(1, iterations // 10)
     for it in range(1, iterations + 1):
         candidate = _perturb(current, instance, dist, rng, remove_fraction)
         candidate = _local_search(candidate, instance, dist)
@@ -370,6 +371,13 @@ def _solve_top_ils_internal(
             if restarted.total_score > best.total_score:
                 best = restarted
                 last_improvement_iter = it
+
+        if it == 1 or it == iterations or it % progress_step == 0:
+            print(
+                f"[ils] iter {it}/{iterations} "
+                f"best={best.total_score:.2f} current={current.total_score:.2f} "
+                f"last_improve={last_improvement_iter} restarts={restarts}"
+            )
 
     cpu_t = time.perf_counter() - start_t
     stats = ILSStats(
@@ -600,12 +608,17 @@ def run_dataset_experiments(
 
         ds_output = per_instance_root / dataset
         ds_output.mkdir(parents=True, exist_ok=True)
+        print(f"[dataset] {dataset}: {len(files)} instances")
 
         for idx, file_path in enumerate(files):
             for run_idx in range(runs_per_instance):
                 try:
                     instance = _parse_top_instance_file(file_path)
                     run_seed = seed + (idx * 1000) + run_idx
+                    print(
+                        f"[run] {dataset}/{file_path.name} run={run_idx} "
+                        f"({idx + 1}/{len(files)}) seed={run_seed}"
+                    )
                     solution, stats = solve_top_ils_with_stats(
                         instance=instance,
                         iterations=iterations,
@@ -613,6 +626,11 @@ def run_dataset_experiments(
                         alpha=alpha,
                         remove_fraction=remove_fraction,
                         restart_interval=restart_interval,
+                    )
+                    print(
+                        f"[done] {dataset}/{file_path.name} run={run_idx} "
+                        f"score={solution.total_score:.2f} cpu={stats.cpu_time_seconds:.3f}s "
+                        f"iters_to_conv={stats.iterations_to_convergence}"
                     )
 
                     out_data = _solution_to_dict(solution, instance, stats)
@@ -648,6 +666,7 @@ def run_dataset_experiments(
                     key = (dataset, file_path.name)
                     by_instance_runs.setdefault(key, []).append(row)
                 except Exception as ex:
+                    print(f"[error] {dataset}/{file_path.name} run={run_idx}: {ex}")
                     summary_rows.append(
                         {
                             "dataset": dataset,
@@ -966,7 +985,7 @@ def main() -> None:
     parser.add_argument("--instance", type=str, default="", help="Path to one TOP instance file")
     parser.add_argument("--experiment", action="store_true", help="Run batch experiments from datasets folder")
     parser.add_argument("--datasets-root", type=str, default="datasets", help="Datasets root path")
-    parser.add_argument("--output-root", type=str, default="output", help="Output root path")
+    parser.add_argument("--output-root", type=str, default="output_ils", help="Output root path")
     parser.add_argument("--iterations", type=int, default=300, help="ILS iterations")
     parser.add_argument("--seed", type=int, default=7, help="Random seed")
     parser.add_argument("--alpha", type=float, default=0.25, help="RCL ratio in construction")

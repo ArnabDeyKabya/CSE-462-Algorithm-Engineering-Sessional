@@ -7,20 +7,20 @@
     "end_depot": 63
   },
   "objective": {
-    "total_score": 564.0
+    "total_score": 582.0
   },
   "performance": {
-    "cpu_time_seconds": 2.1752925000000687,
-    "iterations": 8,
-    "iterations_to_convergence": 8,
-    "last_improvement_iteration": 8,
+    "cpu_time_seconds": 4.0078237999696285,
+    "iterations": 12,
+    "iterations_to_convergence": 12,
+    "last_improvement_iteration": 12,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
-    "num_lp_solves": 8,
-    "num_labels_generated": 523328,
-    "columns_generated": 1071,
-    "columns_in_pool": 1071,
+    "num_lp_solves": 12,
+    "num_labels_generated": 1063920,
+    "columns_generated": 1078,
+    "columns_in_pool": 1078,
     "fractional_columns_at_root": 0
   },
   "routes": [
@@ -28,35 +28,15 @@
       "route_index": 1,
       "nodes": [
         0,
-        28,
-        21,
+        27,
+        35,
         63
       ],
       "score": 78.0,
-      "length": 21.31370849898476
+      "length": 19.79898987322333
     },
     {
       "route_index": 2,
-      "nodes": [
-        0,
-        7,
-        17,
-        23,
-        16,
-        22,
-        30,
-        31,
-        38,
-        45,
-        50,
-        55,
-        63
-      ],
-      "score": 234.0,
-      "length": 21.63826381932152
-    },
-    {
-      "route_index": 3,
       "nodes": [
         0,
         8,
@@ -70,6 +50,26 @@
         40,
         46,
         56,
+        63
+      ],
+      "score": 252.0,
+      "length": 21.63826381932152
+    },
+    {
+      "route_index": 3,
+      "nodes": [
+        0,
+        7,
+        17,
+        23,
+        31,
+        38,
+        30,
+        29,
+        37,
+        44,
+        50,
+        55,
         63
       ],
       "score": 252.0,

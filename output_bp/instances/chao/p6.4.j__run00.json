@@ -7,55 +7,33 @@
     "end_depot": 63
   },
   "objective": {
-    "total_score": 288.0
+    "total_score": 360.0
   },
   "performance": {
-    "cpu_time_seconds": 0.5506619000007049,
-    "iterations": 8,
-    "iterations_to_convergence": 8,
-    "last_improvement_iteration": 8,
+    "cpu_time_seconds": 0.8438283000141382,
+    "iterations": 10,
+    "iterations_to_convergence": 10,
+    "last_improvement_iteration": 10,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
-    "num_lp_solves": 8,
-    "num_labels_generated": 224704,
-    "columns_generated": 165,
-    "columns_in_pool": 165,
-    "fractional_columns_at_root": 0
+    "num_lp_solves": 10,
+    "num_labels_generated": 391820,
+    "columns_generated": 167,
+    "columns_in_pool": 167,
+    "fractional_columns_at_root": 6
   },
   "routes": [
     {
       "route_index": 1,
       "nodes": [
         0,
-        23,
-        38,
-        63
-      ],
-      "score": 48.0,
-      "length": 14.649110640673518
-    },
-    {
-      "route_index": 2,
-      "nodes": [
-        0,
-        25,
-        40,
-        63
-      ],
-      "score": 48.0,
-      "length": 14.649110640673518
-    },
-    {
-      "route_index": 3,
-      "nodes": [
-        0,
-        1,
-        7,
-        17,
-        31,
-        39,
-        51,
+        4,
+        12,
+        24,
+        32,
+        46,
+        56,
         59,
         63
       ],
@@ -63,20 +41,46 @@
       "length": 14.82842712474619
     },
     {
-      "route_index": 4,
+      "route_index": 2,
       "nodes": [
         0,
-        2,
-        8,
-        18,
-        32,
-        46,
-        56,
-        62,
+        1,
+        7,
+        17,
+        31,
+        45,
+        55,
+        61,
         63
       ],
       "score": 96.0,
       "length": 14.82842712474619
+    },
+    {
+      "route_index": 3,
+      "nodes": [
+        0,
+        11,
+        23,
+        38,
+        50,
+        63
+      ],
+      "score": 84.0,
+      "length": 14.94427190999916
+    },
+    {
+      "route_index": 4,
+      "nodes": [
+        0,
+        13,
+        25,
+        40,
+        52,
+        63
+      ],
+      "score": 84.0,
+      "length": 14.94427190999916
     }
   ],
   "dataset": "chao",

@@ -7,18 +7,18 @@
     "end_depot": 264
   },
   "objective": {
-    "total_score": 1143.0
+    "total_score": 1334.0
   },
   "performance": {
-    "cpu_time_seconds": 11.816364899998007,
+    "cpu_time_seconds": 15.395016200025566,
     "iterations": 6,
     "iterations_to_convergence": 6,
     "last_improvement_iteration": 6,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
+    "restarts_performed": 3,
     "num_lp_solves": 6,
-    "num_labels_generated": 2884140,
+    "num_labels_generated": 5680620,
     "columns_generated": 5079,
     "columns_in_pool": 1693,
     "fractional_columns_at_root": 0
@@ -60,14 +60,18 @@
         118,
         116,
         115,
+        63,
         62,
+        61,
         35,
+        34,
+        33,
         39,
         40,
         264
       ],
-      "score": 764.0,
-      "length": 2788.517861817331
+      "score": 955.0,
+      "length": 3279.669127533634
     }
   ],
   "dataset": "dang",

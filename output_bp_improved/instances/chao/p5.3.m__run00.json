@@ -10,7 +10,7 @@
     "total_score": 650.0
   },
   "performance": {
-    "cpu_time_seconds": 491.75439439999536,
+    "cpu_time_seconds": 15.4423554999521,
     "iterations": 34,
     "iterations_to_convergence": 34,
     "last_improvement_iteration": 34,
@@ -20,7 +20,7 @@
     "num_lp_solves": 34,
     "num_labels_generated": 1976095,
     "columns_generated": 3849,
-    "columns_in_pool": 1282,
+    "columns_in_pool": 1284,
     "fractional_columns_at_root": 0
   },
   "routes": [
@@ -31,35 +31,34 @@
         37,
         45,
         53,
-        54,
-        62,
         61,
         60,
+        59,
+        51,
         52,
         44,
-        36,
         65
       ],
-      "score": 220.0,
-      "length": 20.92080962648189
+      "score": 215.0,
+      "length": 20.495358041299248
     },
     {
       "route_index": 2,
       "nodes": [
         0,
-        29,
-        22,
-        14,
-        15,
-        7,
-        6,
+        20,
+        12,
+        4,
         5,
+        6,
+        14,
         13,
         21,
+        29,
         65
       ],
       "score": 215.0,
-      "length": 21.586516058136343
+      "length": 20.495358041299248
     },
     {
       "route_index": 3,
@@ -74,10 +73,11 @@
         33,
         34,
         35,
+        36,
         65
       ],
-      "score": 215.0,
-      "length": 20.159415253899006
+      "score": 220.0,
+      "length": 20.23606797749979
     }
   ],
   "dataset": "chao",

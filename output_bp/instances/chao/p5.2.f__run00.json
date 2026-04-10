@@ -10,7 +10,7 @@
     "total_score": 190.0
   },
   "performance": {
-    "cpu_time_seconds": 0.36596279999866965,
+    "cpu_time_seconds": 0.892984899925068,
     "iterations": 2,
     "iterations_to_convergence": 2,
     "last_improvement_iteration": 2,
@@ -18,7 +18,7 @@
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
     "num_lp_solves": 2,
-    "num_labels_generated": 40768,
+    "num_labels_generated": 56056,
     "columns_generated": 463,
     "columns_in_pool": 463,
     "fractional_columns_at_root": 0

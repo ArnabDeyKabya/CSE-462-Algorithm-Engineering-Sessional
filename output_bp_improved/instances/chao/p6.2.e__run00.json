@@ -10,15 +10,15 @@
     "total_score": 324.0
   },
   "performance": {
-    "cpu_time_seconds": 1.1906221000026562,
+    "cpu_time_seconds": 9.13619689992629,
     "iterations": 6,
     "iterations_to_convergence": 6,
     "last_improvement_iteration": 6,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
+    "restarts_performed": 3,
     "num_lp_solves": 6,
-    "num_labels_generated": 394416,
+    "num_labels_generated": 482064,
     "columns_generated": 1509,
     "columns_in_pool": 503,
     "fractional_columns_at_root": 0
@@ -30,12 +30,12 @@
         0,
         1,
         7,
+        11,
         17,
         23,
         31,
         38,
         45,
-        50,
         55,
         61,
         63
@@ -47,7 +47,7 @@
       "route_index": 2,
       "nodes": [
         0,
-        2,
+        4,
         8,
         18,
         25,
@@ -56,7 +56,7 @@
         46,
         52,
         56,
-        62,
+        59,
         63
       ],
       "score": 162.0,

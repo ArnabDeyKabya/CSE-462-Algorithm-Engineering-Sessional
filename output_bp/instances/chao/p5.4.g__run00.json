@@ -10,7 +10,7 @@
     "total_score": 130.0
   },
   "performance": {
-    "cpu_time_seconds": 0.17909839999992982,
+    "cpu_time_seconds": 0.23876470001414418,
     "iterations": 3,
     "iterations_to_convergence": 3,
     "last_improvement_iteration": 3,
@@ -18,7 +18,7 @@
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
     "num_lp_solves": 3,
-    "num_labels_generated": 29760,
+    "num_labels_generated": 40920,
     "columns_generated": 80,
     "columns_in_pool": 80,
     "fractional_columns_at_root": 0
@@ -62,9 +62,9 @@
       "route_index": 4,
       "nodes": [
         0,
-        21,
         20,
-        28,
+        21,
+        29,
         65
       ],
       "score": 35.0,

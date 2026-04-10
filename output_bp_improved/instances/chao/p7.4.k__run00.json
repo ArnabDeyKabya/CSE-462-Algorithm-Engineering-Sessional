@@ -10,17 +10,17 @@
     "total_score": 411.0
   },
   "performance": {
-    "cpu_time_seconds": 4.867395599998417,
-    "iterations": 30,
-    "iterations_to_convergence": 30,
-    "last_improvement_iteration": 30,
+    "cpu_time_seconds": 6.454759599990211,
+    "iterations": 36,
+    "iterations_to_convergence": 36,
+    "last_improvement_iteration": 36,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
-    "num_lp_solves": 30,
-    "num_labels_generated": 1819962,
-    "columns_generated": 858,
-    "columns_in_pool": 286,
+    "restarts_performed": 3,
+    "num_lp_solves": 36,
+    "num_labels_generated": 2710686,
+    "columns_generated": 864,
+    "columns_in_pool": 288,
     "fractional_columns_at_root": 0
   },
   "routes": [
@@ -39,8 +39,8 @@
       "route_index": 2,
       "nodes": [
         0,
-        3,
         18,
+        3,
         101
       ],
       "score": 43.0,

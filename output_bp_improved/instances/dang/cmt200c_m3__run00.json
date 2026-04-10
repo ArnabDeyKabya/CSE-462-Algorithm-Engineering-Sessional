@@ -7,47 +7,36 @@
     "end_depot": 200
   },
   "objective": {
-    "total_score": 428.0
+    "total_score": 766.0
   },
   "performance": {
-    "cpu_time_seconds": 9.629219799997372,
-    "iterations": 6,
-    "iterations_to_convergence": 6,
-    "last_improvement_iteration": 6,
+    "cpu_time_seconds": 135.33771949994843,
+    "iterations": 36,
+    "iterations_to_convergence": 36,
+    "last_improvement_iteration": 36,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
-    "num_lp_solves": 6,
-    "num_labels_generated": 2158380,
-    "columns_generated": 5283,
-    "columns_in_pool": 1761,
-    "fractional_columns_at_root": 0
+    "restarts_performed": 3,
+    "num_lp_solves": 36,
+    "num_labels_generated": 24987204,
+    "columns_generated": 5325,
+    "columns_in_pool": 1775,
+    "fractional_columns_at_root": 7
   },
   "routes": [
     {
       "route_index": 1,
       "nodes": [
         0,
-        5,
-        31,
-        200
-      ],
-      "score": 53.0,
-      "length": 65.28271834213217
-    },
-    {
-      "route_index": 2,
-      "nodes": [
-        0,
-        39,
         23,
+        39,
         200
       ],
       "score": 60.0,
       "length": 78.62841352460858
     },
     {
-      "route_index": 3,
+      "route_index": 2,
       "nodes": [
         0,
         112,
@@ -55,9 +44,13 @@
         95,
         151,
         98,
+        100,
+        193,
         85,
         93,
         59,
+        99,
+        104,
         96,
         94,
         183,
@@ -66,8 +59,35 @@
         156,
         200
       ],
-      "score": 315.0,
-      "length": 57.7225898158756
+      "score": 368.0,
+      "length": 64.2685160882066
+    },
+    {
+      "route_index": 3,
+      "nodes": [
+        0,
+        28,
+        111,
+        138,
+        154,
+        12,
+        184,
+        196,
+        68,
+        80,
+        150,
+        177,
+        109,
+        26,
+        195,
+        149,
+        180,
+        105,
+        53,
+        200
+      ],
+      "score": 338.0,
+      "length": 77.0112187240482
     }
   ],
   "dataset": "dang",

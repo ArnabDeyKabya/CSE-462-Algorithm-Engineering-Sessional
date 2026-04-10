@@ -10,7 +10,7 @@
     "total_score": 160.0
   },
   "performance": {
-    "cpu_time_seconds": 0.28222859999732464,
+    "cpu_time_seconds": 0.3508596000028774,
     "iterations": 3,
     "iterations_to_convergence": 3,
     "last_improvement_iteration": 3,
@@ -18,7 +18,7 @@
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
     "num_lp_solves": 3,
-    "num_labels_generated": 41360,
+    "num_labels_generated": 58030,
     "columns_generated": 201,
     "columns_in_pool": 201,
     "fractional_columns_at_root": 0
@@ -28,12 +28,12 @@
       "route_index": 1,
       "nodes": [
         0,
-        39,
-        30,
+        26,
+        35,
         65
       ],
       "score": 40.0,
-      "length": 11.40268234545115
+      "length": 10.894746200455746
     },
     {
       "route_index": 2,

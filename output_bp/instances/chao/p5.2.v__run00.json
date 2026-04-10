@@ -7,10 +7,10 @@
     "end_depot": 65
   },
   "objective": {
-    "total_score": 800.0
+    "total_score": 1060.0
   },
   "performance": {
-    "cpu_time_seconds": 1.0615327999985311,
+    "cpu_time_seconds": 1.5248496000422165,
     "iterations": 2,
     "iterations_to_convergence": 2,
     "last_improvement_iteration": 2,
@@ -18,7 +18,7 @@
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
     "num_lp_solves": 2,
-    "num_labels_generated": 185920,
+    "num_labels_generated": 396264,
     "columns_generated": 1633,
     "columns_in_pool": 1633,
     "fractional_columns_at_root": 0
@@ -26,29 +26,6 @@
   "routes": [
     {
       "route_index": 1,
-      "nodes": [
-        0,
-        21,
-        13,
-        14,
-        15,
-        16,
-        8,
-        7,
-        6,
-        5,
-        4,
-        3,
-        11,
-        12,
-        20,
-        65
-      ],
-      "score": 400.0,
-      "length": 32.33263734820751
-    },
-    {
-      "route_index": 2,
       "nodes": [
         0,
         44,
@@ -62,13 +39,44 @@
         60,
         61,
         62,
+        63,
+        64,
+        56,
+        55,
         54,
         53,
         45,
         65
       ],
-      "score": 400.0,
-      "length": 32.33263734820751
+      "score": 530.0,
+      "length": 40.33263734820751
+    },
+    {
+      "route_index": 2,
+      "nodes": [
+        0,
+        20,
+        12,
+        11,
+        10,
+        9,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        16,
+        15,
+        14,
+        13,
+        21,
+        65
+      ],
+      "score": 530.0,
+      "length": 40.33263734820751
     }
   ],
   "dataset": "chao",

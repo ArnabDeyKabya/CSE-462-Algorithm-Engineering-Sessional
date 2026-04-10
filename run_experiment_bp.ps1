@@ -32,4 +32,4 @@ if ($null -eq $pythonCmd) {
     Write-Error 'Python not found. Activate/install Python first.'
 }
 
-& $pythonCmd 'top_branch_price.py' --experiment --datasets-root 'datasets' --output-root 'output_bp' --seed 7 --max-cg-iterations 8 --pricing-trials 16 --max-insertions 14 --runs-per-instance 1 --skip-existing
+& $pythonCmd 'top_branch_price.py' --experiment --datasets-root 'datasets' --output-root 'output_bp' --seed 7 --max-cg-iterations 12 --pricing-trials 22 --max-insertions 18 --runs-per-instance 1

@@ -10,17 +10,17 @@
     "total_score": 582.0
   },
   "performance": {
-    "cpu_time_seconds": 9.895689000000857,
-    "iterations": 30,
-    "iterations_to_convergence": 30,
-    "last_improvement_iteration": 30,
+    "cpu_time_seconds": 20.846281900070608,
+    "iterations": 36,
+    "iterations_to_convergence": 36,
+    "last_improvement_iteration": 36,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
-    "num_lp_solves": 30,
-    "num_labels_generated": 2280414,
-    "columns_generated": 3204,
-    "columns_in_pool": 1068,
+    "restarts_performed": 3,
+    "num_lp_solves": 36,
+    "num_labels_generated": 3276193,
+    "columns_generated": 3242,
+    "columns_in_pool": 1078,
     "fractional_columns_at_root": 0
   },
   "routes": [
@@ -28,12 +28,12 @@
       "route_index": 1,
       "nodes": [
         0,
-        35,
         27,
+        35,
         63
       ],
       "score": 78.0,
-      "length": 21.31370849898476
+      "length": 19.79898987322333
     },
     {
       "route_index": 2,

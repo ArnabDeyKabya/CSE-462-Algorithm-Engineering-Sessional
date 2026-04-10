@@ -7,20 +7,20 @@
     "end_depot": 136
   },
   "objective": {
-    "total_score": 16.0
+    "total_score": 20.0
   },
   "performance": {
-    "cpu_time_seconds": 25.835143399996014,
-    "iterations": 30,
-    "iterations_to_convergence": 30,
-    "last_improvement_iteration": 30,
+    "cpu_time_seconds": 37.206439900095575,
+    "iterations": 36,
+    "iterations_to_convergence": 36,
+    "last_improvement_iteration": 36,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
-    "num_lp_solves": 30,
-    "num_labels_generated": 7112070,
-    "columns_generated": 5124,
-    "columns_in_pool": 1708,
+    "restarts_performed": 3,
+    "num_lp_solves": 36,
+    "num_labels_generated": 16624278,
+    "columns_generated": 5133,
+    "columns_in_pool": 1711,
     "fractional_columns_at_root": 0
   },
   "routes": [
@@ -28,12 +28,12 @@
       "route_index": 1,
       "nodes": [
         0,
-        25,
         32,
+        20,
         136
       ],
       "score": 2.0,
-      "length": 14581.966718881462
+      "length": 15108.705125661398
     },
     {
       "route_index": 2,
@@ -41,6 +41,7 @@
         0,
         5,
         4,
+        17,
         29,
         28,
         30,
@@ -48,15 +49,18 @@
         18,
         16,
         26,
+        41,
+        36,
         31,
         19,
         15,
+        1,
         7,
         6,
         136
       ],
-      "score": 14.0,
-      "length": 9947.74986975296
+      "score": 18.0,
+      "length": 14838.279407684577
     }
   ],
   "dataset": "dang",

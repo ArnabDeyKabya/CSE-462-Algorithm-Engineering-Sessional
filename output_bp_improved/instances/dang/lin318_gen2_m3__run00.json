@@ -7,18 +7,18 @@
     "end_depot": 318
   },
   "objective": {
-    "total_score": 1193.0
+    "total_score": 1387.0
   },
   "performance": {
-    "cpu_time_seconds": 16.240152899998066,
+    "cpu_time_seconds": 64.16202409984544,
     "iterations": 6,
     "iterations_to_convergence": 6,
     "last_improvement_iteration": 6,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
-    "restarts_performed": 0,
+    "restarts_performed": 3,
     "num_lp_solves": 6,
-    "num_labels_generated": 3496500,
+    "num_labels_generated": 6899508,
     "columns_generated": 5454,
     "columns_in_pool": 1818,
     "fractional_columns_at_root": 0
@@ -28,12 +28,12 @@
       "route_index": 1,
       "nodes": [
         0,
-        2,
+        4,
         36,
         318
       ],
-      "score": 188.0,
-      "length": 2387.186972410019
+      "score": 170.0,
+      "length": 3226.666703968494
     },
     {
       "route_index": 2,
@@ -59,15 +59,19 @@
         21,
         28,
         31,
+        30,
+        29,
         27,
         22,
         19,
         102,
+        11,
+        2,
         1,
         318
       ],
-      "score": 825.0,
-      "length": 1740.4818481643267
+      "score": 1037.0,
+      "length": 2040.8171860859281
     }
   ],
   "dataset": "dang",

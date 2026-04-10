@@ -6,11 +6,11 @@
   },
   "config": {
     "seed": 7,
-    "max_cg_iterations": 10,
-    "pricing_trials": 18,
-    "max_insertions": 14,
-    "runs_per_instance": 1,
-    "skip_existing": true,
+    "max_cg_iterations": 12,
+    "pricing_trials": 22,
+    "max_insertions": 18,
+    "runs_per_instance": 2,
+    "skip_existing": false,
     "improved_restarts": 3,
     "improved_seed_jump": 97
   },

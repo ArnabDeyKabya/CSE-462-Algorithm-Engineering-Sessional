@@ -10,7 +10,7 @@
     "total_score": 755.0
   },
   "performance": {
-    "cpu_time_seconds": 11.085144699994999,
+    "cpu_time_seconds": 13.235228399862535,
     "iterations": 27,
     "iterations_to_convergence": 27,
     "last_improvement_iteration": 27,

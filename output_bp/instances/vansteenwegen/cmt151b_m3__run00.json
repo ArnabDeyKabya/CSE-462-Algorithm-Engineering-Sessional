@@ -7,20 +7,20 @@
     "end_depot": 151
   },
   "objective": {
-    "total_score": 579.0
+    "total_score": 732.0
   },
   "performance": {
-    "cpu_time_seconds": 6.299671699998726,
-    "iterations": 8,
-    "iterations_to_convergence": 8,
-    "last_improvement_iteration": 8,
+    "cpu_time_seconds": 12.458491099998355,
+    "iterations": 12,
+    "iterations_to_convergence": 12,
+    "last_improvement_iteration": 12,
     "stagnation_iterations": 0,
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
-    "num_lp_solves": 8,
-    "num_labels_generated": 1877680,
-    "columns_generated": 1531,
-    "columns_in_pool": 1531,
+    "num_lp_solves": 12,
+    "num_labels_generated": 6177204,
+    "columns_generated": 1537,
+    "columns_in_pool": 1537,
     "fractional_columns_at_root": 0
   },
   "routes": [
@@ -41,22 +41,26 @@
         0,
         89,
         147,
+        6,
         94,
         96,
-        104,
+        118,
+        5,
         99,
         93,
         85,
-        100,
         98,
+        37,
         59,
         95,
+        97,
+        87,
         13,
         112,
         151
       ],
-      "score": 286.0,
-      "length": 61.56427161684354
+      "score": 376.0,
+      "length": 84.09374999505704
     },
     {
       "route_index": 3,
@@ -70,7 +74,11 @@
         80,
         150,
         68,
+        79,
+        3,
+        77,
         116,
+        76,
         12,
         138,
         28,
@@ -78,8 +86,8 @@
         27,
         151
       ],
-      "score": 233.0,
-      "length": 66.76294404537623
+      "score": 296.0,
+      "length": 83.92502975792114
     }
   ],
   "dataset": "vansteenwegen",

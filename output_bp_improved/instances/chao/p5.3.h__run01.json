@@ -10,7 +10,7 @@
     "total_score": 260.0
   },
   "performance": {
-    "cpu_time_seconds": 4.133875200001057,
+    "cpu_time_seconds": 5.47195090004243,
     "iterations": 36,
     "iterations_to_convergence": 36,
     "last_improvement_iteration": 36,
@@ -28,12 +28,12 @@
       "route_index": 1,
       "nodes": [
         0,
-        29,
-        21,
-        13,
-        12,
-        20,
-        28,
+        36,
+        44,
+        52,
+        53,
+        45,
+        37,
         65
       ],
       "score": 90.0,
@@ -43,12 +43,12 @@
       "route_index": 2,
       "nodes": [
         0,
-        37,
-        45,
-        53,
-        52,
-        44,
-        36,
+        29,
+        21,
+        13,
+        12,
+        20,
+        28,
         65
       ],
       "score": 90.0,

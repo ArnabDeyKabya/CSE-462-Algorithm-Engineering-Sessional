@@ -7,10 +7,10 @@
     "end_depot": 101
   },
   "objective": {
-    "total_score": 297.0
+    "total_score": 383.0
   },
   "performance": {
-    "cpu_time_seconds": 1.5223877999997057,
+    "cpu_time_seconds": 2.222291599959135,
     "iterations": 2,
     "iterations_to_convergence": 2,
     "last_improvement_iteration": 2,
@@ -18,7 +18,7 @@
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
     "num_lp_solves": 2,
-    "num_labels_generated": 306880,
+    "num_labels_generated": 667128,
     "columns_generated": 1662,
     "columns_in_pool": 1662,
     "fractional_columns_at_root": 0
@@ -40,6 +40,10 @@
       "nodes": [
         0,
         53,
+        94,
+        96,
+        59,
+        95,
         13,
         58,
         40,
@@ -55,8 +59,8 @@
         27,
         101
       ],
-      "score": 237.0,
-      "length": 87.11889374079729
+      "score": 323.0,
+      "length": 105.86534636798518
     }
   ],
   "dataset": "vansteenwegen",

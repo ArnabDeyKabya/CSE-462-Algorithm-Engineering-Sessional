@@ -1,4 +1,0 @@
-dataset,instance,num_nodes,team_size,runs,reference_best_score,best_score,mean_score,std_score,mean_cpu_time_seconds,median_cpu_time_seconds,mean_lp_solves,mean_labels_generated,success_rate_percent,mean_gap_to_reference_best_percent,max_gap_to_reference_best_percent
-chao,p4.2.a.txt,100,2,1,153.0,153.0,153.0,0.0,0.4829686999983096,0.4829686999983096,6.0,262416.0,100.0,0.0,0.0
-dang,bier127_gen1_m2.txt,128,2,1,36.0,36.0,36.0,0.0,20.21874299999763,20.21874299999763,27.0,11568150.0,100.0,0.0,0.0
-vansteenwegen,bier127_gen1_m2.txt,128,2,1,36.0,36.0,36.0,0.0,20.387793399997463,20.387793399997463,27.0,11568150.0,100.0,0.0,0.0

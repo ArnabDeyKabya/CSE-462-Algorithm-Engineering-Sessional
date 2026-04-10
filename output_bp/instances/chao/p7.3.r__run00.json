@@ -7,10 +7,10 @@
     "end_depot": 101
   },
   "objective": {
-    "total_score": 380.0
+    "total_score": 466.0
   },
   "performance": {
-    "cpu_time_seconds": 1.4538027999988117,
+    "cpu_time_seconds": 1.8306309999898076,
     "iterations": 2,
     "iterations_to_convergence": 2,
     "last_improvement_iteration": 2,
@@ -18,7 +18,7 @@
     "accepted_worse_moves": 0,
     "restarts_performed": 0,
     "num_lp_solves": 2,
-    "num_labels_generated": 306880,
+    "num_labels_generated": 667128,
     "columns_generated": 1530,
     "columns_in_pool": 1530,
     "fractional_columns_at_root": 0
@@ -51,6 +51,10 @@
       "nodes": [
         0,
         39,
+        14,
+        58,
+        8,
+        57,
         21,
         41,
         75,
@@ -66,8 +70,8 @@
         29,
         101
       ],
-      "score": 237.0,
-      "length": 87.11889374079729
+      "score": 323.0,
+      "length": 105.86534636798518
     }
   ],
   "dataset": "chao",
